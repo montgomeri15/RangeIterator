@@ -34,9 +34,8 @@ public class RangeWithStep implements Iterable<Integer> {
                 int nextInt = cursor;
                 cursor += step;
                 return nextInt;
-            } else {
-                throw new NoSuchElementException();
             }
+            throw new NoSuchElementException();
         }
 
         @Override

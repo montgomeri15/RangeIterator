@@ -31,9 +31,8 @@ public class Range implements Iterable<Integer> {
         public Integer next() {
             if(hasNext()) {
                 return cursor++;
-            } else {
-                throw new NoSuchElementException();
             }
+            throw new NoSuchElementException();
         }
 
         @Override
