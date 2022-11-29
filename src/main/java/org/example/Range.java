@@ -15,7 +15,6 @@ public class Range implements Iterable<Integer> {
         return new RangeIterator();
     }
 
-    //Inner RangeIterator class
     private class RangeIterator implements Iterator<Integer> {
         private int cursor;
 
@@ -32,9 +31,8 @@ public class Range implements Iterable<Integer> {
         public Integer next() {
             if(hasNext()) {
                 return cursor++;
-            } else {
-                throw new NoSuchElementException();
             }
+            throw new NoSuchElementException();
         }
 
         @Override
