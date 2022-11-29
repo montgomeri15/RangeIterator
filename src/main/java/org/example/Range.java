@@ -15,7 +15,6 @@ public class Range implements Iterable<Integer> {
         return new RangeIterator();
     }
 
-    //Inner RangeIterator class
     private class RangeIterator implements Iterator<Integer> {
         private int cursor;
 

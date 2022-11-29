@@ -16,7 +16,6 @@ public class RangeWithStep implements Iterable<Integer> {
         return new RangeIteratorWithStep();
     }
 
-    //Inner RangeIteratorWithStep class
     private class RangeIteratorWithStep implements Iterator<Integer> {
         private int cursor;
 
@@ -38,7 +37,7 @@ public class RangeWithStep implements Iterable<Integer> {
             } else {
                 throw new NoSuchElementException();
             }
-    }
+        }
 
         @Override
         public void remove() {
